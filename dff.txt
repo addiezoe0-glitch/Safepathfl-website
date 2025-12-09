@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>SafePath Transportation | School Transportation Orlando</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style>
+    :root {
+      --primary:#0b6cff;
+      --accent:#0b3d91;
+      --bg:#f5f7ff;
+      --text:#1f2933;
+      --radius:14px;
+    }
+
+    body {
+      margin:0;
+      font-family: Arial, sans-serif;
+      background:var(--bg);
+      color:var(--text);
+    }
+
+    a { text-decoration:none; }
+
+    .topbar {
+      background:#0b254a;
+      color:white;
+      padding:8px 16px;
+      font-size:14px;
+    }
+
+    .topbar-inner {
+      max-width:1100px;
+      margin:auto;
+      display:flex;
+      justify-content:space-between;
+      flex-wrap:wrap;
+      gap:10px;
+    }
+
+    header {
+      background:white;
+      box-shadow:0 6px 24px rgba(0,0,0,.1);
+    }
+
+    .nav-inner {
+      max-width:1100px;
+      margin:auto;
+      padding:14px 16px;
+      display:flex;
+      align-items:center;
+      gap:16px;
+    }
+
+    .brand {
+      display:flex;
+      align-items:center;
+      gap:12px;
+    }
+
+    .brand-logo img {
+      width:60px;
+      height:60px;
+      object-fit:contain;
+    }
+
+    nav { margin-left:auto; display:flex; gap:14px; }
+
+    nav a {
+      font-weight:600;
+      color:#333;
+    }
+
+    .btn-cta {
+      background:var(--primary);
+      color:white;
+      padding:8px 16px;
+      border-radius:999px;
+      font-weight:700;
+    }
+
+    .lang-btn {
+      border:1px solid #ccc;
+      background:white;
+      padding:6px 10px;
+      border-radius:999px;
+      cursor:pointer;
+      font-size:12px;
+      font-weight:600;
+    }
+
+    .lang-btn.active {
+      background:var(--primary);
+      color:white;
+      border-color:var(--primary);
+    }
+
+    .hero {
+      max-width:1100px;
+      margin:auto;
+      padding:30px 16px;
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:25px;
+      align-items:center;
+    }
+
+    .hero h1 { font-size:32px; color:var(--accent); }
+
+    .hero-img {
+      width:100%;
+      border-radius:var(--radius);
+    }
+
+    section {
+      max-width:1100px;
+      margin:auto;
+      padding:25px 16px;
+    }
+
+    .section-card {
+      background:white;
+      padding:20px;
+      border-radius:var(--radius);
+    }
+
+    .gallery {
+      display:flex;
+      gap:15px;
+      flex-wrap:wrap;
+      margin-top:15px;
+    }
+
+    .gallery img {
+      width:32%;
+      border-radius:12px;
+    }
+
+    input, select, textarea {
+      width:100%;
+      padding:8px;
+      border-radius:8px;
+      border:1px solid #ccc;
+      margin-bottom:8px;
+      font-size:14px;
+    }
+
+    button {
+      background:var(--primary);
+      color:white;
+      border:none;
+      padding:10px 18px;
+      border-radius:999px;
+      font-weight:700;
+      cursor:pointer;
+    }
+
+    footer {
+      background:#0b254a;
+      color:white;
+      text-align:center;
+      padding:20px;
+      font-size:13px;
+      margin-top:20px;
+    }
+
+    .whatsapp-float {
+      position: fixed;
+      width: 55px;
+      height: 55px;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25D366;
+      color: white;
+      border-radius: 50%;
+      text-align: center;
+      font-size: 30px;
+      line-height: 55px;
+      box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
+      z-index: 999;
+    }
+
+    .lang { display:none; }
+    .lang.active { display:block; }
+
+    @media(max-width:900px){
+      .hero { grid-template-columns:1fr; }
+      nav { display:none; }
+      .gallery img { width:100%; }
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="topbar">
+  <div class="topbar-inner">
+    <div>📞 <a href="tel:13522335875" style="color:white;">352-233-5875</a></div>
+    <div>📍 Orlando, Florida</div>
+  </div>
+</div>
+
+<header>
+  <div class="nav-inner">
+    <div class="brand">
+      <div class="brand-logo">
+        <img src="logo.png" alt="SafePath Logo">
+      </div>
+      <strong>SafePath Transportation</strong>
+    </div>
+
+    <nav>
+      <a href="#benefits">Benefits</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact" class="btn-cta">Request Info</a>
+    </nav>
+
+    <div>
+      <button class="lang-btn active" onclick="setLang('en')">EN</button>
+      <button class="lang-btn" onclick="setLang('es')">ES</button>
+    </div>
+  </div>
+</header>
+
+<!-- ENGLISH -->
+<div id="en" class="lang active">
+
+<section class="hero">
+  <div>
+    <h1>Safe & Reliable School Transportation in Orlando</h1>
+    <p>Private door-to-door transportation service for K-12 students. Safety, punctuality and parent communication.</p>
+
+    <a href="tel:13522335875" class="btn-cta">Call Now</a>
+    <a href="https://wa.me/13522335875" class="btn-cta" style="background:#25D366;">WhatsApp</a>
+  </div>
+
+  <img src="https://images.unsplash.com/photo-1596495577886-d920f1fb7238" class="hero-img">
+</section>
+
+<section id="benefits">
+  <div class="section-card">
+    <h2>Benefits</h2>
+    <ul>
+      <li>Door-to-door service</li>
+      <li>Certified drivers</li>
+      <li>Fully insured vehicles</li>
+      <li>Direct communication with parents</li>
+    </ul>
+  </div>
+</section>
+
+<section id="gallery">
+  <div class="section-card">
+    <h2>Gallery</h2>
+    <div class="gallery">
+      <img src="https://images.unsplash.com/photo-1600077091092-1a68a7adb1c6">
+      <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7">
+      <img src="https://images.unsplash.com/photo-1530543787849-128d94430c6b">
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="section-card">
+    <h2>Request Information</h2>
+
+    <form onsubmit="sendWhatsApp(event, 'en')">
+      <input id="name-en" placeholder="Parent Name" required>
+      <input id="phone-en" placeholder="Phone" required>
+      <input id="email-en" placeholder="Email" required>
+      <input id="address-en" placeholder="Pickup Address" required>
+      <input id="school-en" placeholder="School">
+      <select id="schedule-en" required>
+        <option value="">Schedule</option>
+        <option>Morning</option>
+        <option>Afternoon</option>
+        <option>Full Day</option>
+      </select>
+
+      <button type="submit">Send via WhatsApp</button>
+    </form>
+  </div>
+</section>
+
+</div>
+
+<!-- SPANISH -->
+<div id="es" class="lang">
+
+<section class="hero">
+  <div>
+    <h1>Transporte Escolar Seguro en Orlando</h1>
+    <p>Servicio privado puerta a puerta para estudiantes K-12 con seguridad y puntualidad.</p>
+
+    <a href="tel:13522335875" class="btn-cta">Llamar</a>
+    <a href="https://wa.me/13522335875" class="btn-cta" style="background:#25D366;">WhatsApp</a>
+  </div>
+
+  <img src="https://images.unsplash.com/photo-1596495577886-d920f1fb7238" class="hero-img">
+</section>
+
+<section>
+  <div class="section-card">
+    <h2>Beneficios</h2>
+    <ul>
+      <li>Servicio puerta a puerta</li>
+      <li>Conductores certificados</li>
+      <li>Vehículos asegurados</li>
+      <li>Comunicación directa con los padres</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <div class="section-card">
+    <h2>Solicitar Información</h2>
+
+    <form onsubmit="sendWhatsApp(event, 'es')">
+      <input id="name-es" placeholder="Nombre del padre/madre" required>
+      <input id="phone-es" placeholder="Teléfono" required>
+      <input id="email-es" placeholder="Email" required>
+      <input id="address-es" placeholder="Dirección" required>
+      <input id="school-es" placeholder="Escuela">
+      <select id="schedule-es" required>
+        <option value="">Horario</option>
+        <option>Mañana</option>
+        <option>Tarde</option>
+        <option>Completo</option>
+      </select>
+
+      <button type="submit">Enviar por WhatsApp</button>
+    </form>
+  </div>
+</section>
+
+</div>
+
+<footer>
+  © 2025 SafePath Transportation · Orlando, FL · 352-233-5875
+</footer>
+
+<a href="https://wa.me/13522335875" class="whatsapp-float">💬</a>
+
+<script>
+function setLang(lang){
+  document.getElementById("en").classList.remove("active");
+  document.getElementById("es").classList.remove("active");
+  document.getElementById(lang).classList.add("active");
+
+  document.querySelectorAll(".lang-btn").forEach(b => b.classList.remove("active"));
+  if(lang==="en") document.querySelectorAll(".lang-btn")[0].classList.add("active");
+  else document.querySelectorAll(".lang-btn")[1].classList.add("active");
+}
+
+function sendWhatsApp(e, lang){
+  e.preventDefault();
+
+  let name = document.getElementById("name-"+lang).value;
+  let phone = document.getElementById("phone-"+lang).value;
+  let email = document.getElementById("email-"+lang).value;
+  let address = document.getElementById("address-"+lang).value;
+  let school = document.getElementById("school-"+lang).value;
+  let schedule = document.getElementById("schedule-"+lang).value;
+
+  let message = lang==="en" ?
+`Hello, I would like school transportation info:
+
+Name: ${name}
+Phone: ${phone}
+Email: ${email}
+Address: ${address}
+School: ${school}
+Schedule: ${schedule}`
+
+:
+
+`Hola, deseo información sobre transporte escolar:
+
+Nombre: ${name}
+Teléfono: ${phone}
+Email: ${email}
+Dirección: ${address}
+Escuela: ${school}
+Horario: ${schedule}`;
+
+  let url = "https://wa.me/13522335875?text=" + encodeURIComponent(message);
+  window.open(url, "_blank");
+}
+</script>
+
+</body>
+</html>
